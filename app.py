@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 #import torch
 #from torchvision import transforms, models 
-from PIL import Image
+#from PIL import Image
 import os
 
 app = Flask(__name__)
@@ -32,7 +32,7 @@ def index():
 def predict():
     data = request.get_json()
     image_name = data['image']
-    image_path = os.path.join('static', image_name)
+    #image_path = os.path.join('static', image_name)
 
     # 이미지 로드 및 전처리
     #image = Image.open(image_path).convert('RGB')
