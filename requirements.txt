@@ -1,4 +1,5 @@
-#torch
-#torchvision
 flask
-
+numpy 
+opencv-python
+pyyaml 
+matplotlib
