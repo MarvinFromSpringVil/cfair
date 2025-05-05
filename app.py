@@ -99,4 +99,5 @@ def process_images():
     return render_template('index.html', images=images, processed_images=processed_images, message=output_message)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+    #app.run(debug=True, host='0.0.0.0', port=10000)
